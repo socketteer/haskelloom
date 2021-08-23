@@ -4,11 +4,11 @@ cabal-version: 1.12
 --
 -- see: https://github.com/sol/hpack
 
-name:           myproj
+name:           haskelloom
 version:        0.1.0.0
-description:    Please see the README on GitHub at <https://github.com/githubuser/myproj#readme>
-homepage:       https://github.com/githubuser/myproj#readme
-bug-reports:    https://github.com/githubuser/myproj/issues
+description:    Please see the README on GitHub at <https://github.com/githubuser/haskelloom#readme>
+homepage:       https://github.com/githubuser/haskelloom#readme
+bug-reports:    https://github.com/githubuser/haskelloom/issues
 author:         Author name here
 maintainer:     example@example.com
 copyright:      2021 Author name here
@@ -21,13 +21,13 @@ extra-source-files:
 
 source-repository head
   type: git
-  location: https://github.com/githubuser/myproj
+  location: https://github.com/githubuser/haskelloom
 
 library
   exposed-modules:
       Lib
   other-modules:
-      Paths_myproj
+      Paths_haskelloom
   hs-source-dirs:
       src
   build-depends:
@@ -35,29 +35,29 @@ library
     , gloss
   default-language: Haskell2010
 
-executable myproj-exe
+executable haskelloom-exe
   main-is: Main.hs
   other-modules:
-      Paths_myproj
+      Paths_haskelloom
   hs-source-dirs:
       app
   ghc-options: -threaded -rtsopts -with-rtsopts=-N
   build-depends:
       base >=4.7 && <5
     , gloss
-    , myproj
+    , haskelloom
   default-language: Haskell2010
 
-test-suite myproj-test
+test-suite haskelloom-test
   type: exitcode-stdio-1.0
   main-is: Spec.hs
   other-modules:
-      Paths_myproj
+      Paths_haskelloom
   hs-source-dirs:
       test
   ghc-options: -threaded -rtsopts -with-rtsopts=-N
   build-depends:
       base >=4.7 && <5
     , gloss
-    , myproj
+    , haskelloom
   default-language: Haskell2010
